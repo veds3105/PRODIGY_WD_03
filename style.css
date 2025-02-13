@@ -1,0 +1,113 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #151515, #1e3c72, #a01cd4, #f0df70);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite alternate;
+  color: #fff; /* Text color */
+}
+
+
+  
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(238, 232, 232, 0.796); /* Subtle box shadow */
+    background-color: #222; /* Darker background for the board */ 
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    cursor: pointer;
+    border: 1px solid #fff; 
+    transition: background-color 0.2s ease-in-out; 
+  }
+  
+  .cell:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+  }
+  
+  .x {
+    color: #d9534f; /* X color */
+  }
+  
+  .o {
+    color: #5cb85c; /* O color */
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffcc70; /* Gold result color */
+  }
+  
+  #restart-button {
+    margin-top: 10px;
+    padding: 15px 30px;
+    background-color: #ffcc70; /* Gold button */
+    color: #151515;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .restart-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust spacing from elements above */
+    margin-bottom: 20px; /* Adds space below the restart button */
+}
+
+  #restart-button:hover {
+    background-color: #e94560; 
+  }
+  
+  .controls {
+    margin-top: 20px;
+    color: #fff; /* White color for controls */
+  }
+  
+  /* Game Mode Box Styling */
+  #game-mode {
+    background-color: #333; /* Dark background for select box */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px; 
+    border: 1px solid #fff;
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="14" viewBox="0 0 24 14"><path fill="#fff" d="M2.5 1.5l6.5 6.5-6.5 6.5"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #game-mode:hover {
+    background-color: #444; 
+  }
+  
+  #game-mode {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  

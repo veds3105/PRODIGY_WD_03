@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <h1>Tic-Tac-Toe</h1>
+    <div class="game-board">
+      <div class="cell" data-row="0" data-col="0"></div>
+      <div class="cell" data-row="0" data-col="1"></div>
+      <div class="cell" data-row="0" data-col="2"></div>
+      <div class="cell" data-row="1" data-col="0"></div>
+      <div class="cell" data-row="1" data-col="1"></div>
+      <div class="cell" data-row="1" data-col="2"></div>
+      <div class="cell" data-row="2" data-col="0"></div>
+      <div class="cell" data-row="2" data-col="1"></div>
+      <div class="cell" data-row="2" data-col="2"></div>
+    </div>
+    <div id="result"></div>
+    <div class="controls">
+      <div class="restart-container">
+        <button id="restart-button">Restart</button>
+    </div>
+      <label for="game-mode">Game Mode:</label>
+      <select id="game-mode">
+        <option value="player">Two Players</option>
+        <option value="ai">Play Against AI</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
